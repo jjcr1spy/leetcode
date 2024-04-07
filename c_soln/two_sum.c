@@ -1,4 +1,5 @@
-// #include "uthash.h" defines a map we can use 
+//#include "uthash.h" defines a map we can use 
+//#include <stdlib.h> 
 
 struct hash_table {
 	int key; // key of hash_table
@@ -15,7 +16,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
 	for(int i = 0; i < numsSize; ++i){
 		int k = target - nums[i];
         
-        HASH_FIND_INT(hash, &k, elem); // Look for the item in hash table
+        HASH_FIND_INT(hash, &k, elem); // since we are using a int as key
 
 		if (elem) {
 			res[0] = elem->val;
@@ -26,7 +27,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
 			elem->key = nums[i]; // array element as key of hash table
             elem->val = i;       // index of an element as value of hash table
             
-			HASH_ADD_INT(hash, key, elem); // add item to hash table
+			HASH_ADD_INT(hash, key, elem); // since our key is stored in struct itself and an int
 		}
 	}
     
