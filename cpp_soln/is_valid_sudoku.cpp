@@ -1,8 +1,8 @@
-//#include <vector>
+#include <vector>
 
 class Solution {
 public:
-    bool isValidSudoku(vector<vector<char>>& board) {
+    bool isValidSudoku(std::vector<std::vector<char>>& board) {
         int sub[9][9] = {0};
         int row[9][9] = {0};
         int col[9][9] = {0};

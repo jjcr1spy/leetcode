@@ -1,5 +1,5 @@
-//#include <unordered_set>
-//#include <vector>
+#include <unordered_set>
+#include <vector>
 
 class Solution {
 public:
@@ -12,7 +12,7 @@ public:
             if(!s.count(n - 1)){
                 int length = 1; 
                 while(s.count(n + length)) ++length;
-                longest = max(longest, length);
+                longest = std::max(longest, length);
             } 
         }
         

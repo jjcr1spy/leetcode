@@ -1,11 +1,11 @@
-//#include <vector> for soln
-//#include <unordered_map> for m
-//#include <queue> for pq
-//#include <utility> for pair
+#include <vector> 
+#include <unordered_map> 
+#include <queue> 
+#include <utility> // for pair
 
 class Solution {
 public:
-    vector<int> topKFrequent(vector<int>& nums, int k) {
+    std::vector<int> topKFrequent(std::vector<int>& nums, int k) {
         std::unordered_map<int, int> m;
         for (auto &i : nums) {
             m[i]++;

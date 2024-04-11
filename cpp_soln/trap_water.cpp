@@ -1,9 +1,9 @@
-//#include <vector>
-//#include <algorithm>
+#include <vector>
+#include <algorithm>
 
 class Solution {
 public:
-    int trap(vector<int>& height) {
+    int trap(std::vector<int>& height) {
         int s = height.size();
 
         std::vector<int> left(s, 0), right(s, 0);
@@ -28,7 +28,7 @@ public:
 
         int water = 0, to_add;
         for (int i = 1; i < s - 1; i++) {
-            to_add = min(left[i], right[i]) - height[i];
+            to_add = std::min(left[i], right[i]) - height[i];
 
             if (to_add > 0) water += to_add;
         }

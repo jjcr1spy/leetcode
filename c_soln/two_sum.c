@@ -1,5 +1,5 @@
-//#include "uthash.h" defines a map we can use 
-//#include <stdlib.h> 
+#include "uthash.h" defines a map we can use 
+#include <stdlib.h> 
 
 struct hash_table {
 	int key; // key of hash_table

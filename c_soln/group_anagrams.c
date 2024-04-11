@@ -1,6 +1,7 @@
-//#include <stdlib.h>
-//#include <string.h>
-//#include "uthash.h" defines a map we can use 
+#include <stdlib.h>
+#include <string.h>
+#include "uthash.h" //defines a map we can use 
+
 #define MAX 100;
 
 struct hash_map {

@@ -1,8 +1,8 @@
-//#include <vector>
+#include <vector>
 
 class Solution {
 public:
-    vector<int> productExceptSelf(vector<int>& nums) {
+    std::vector<int> productExceptSelf(std::vector<int>& nums) {
         int n=nums.size();
         vector<int >a(n,1);
 
