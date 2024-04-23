@@ -5,18 +5,18 @@
 
 class Solution {
 public:
-    std::vector<std::vector<string>> groupAnagrams(std::vector<string>& strs) {
-        std::unordered_map<string, std::vector<string>> m;
+    std::vector<std::vector<std::string>> groupAnagrams(std::vector<std::string>& strs) {
+        std::unordered_map<std::string, std::vector<std::string>> m;
 
         for (int i = 0; i < strs.size(); i++) {
-            string sorted_str = strs[i];
+            std::string sorted_str = strs[i];
 
             std::sort(sorted_str.begin(), sorted_str.end());
 
             m[sorted_str].push_back(strs[i]);
         }
 
-        std::vector<vector<string>> v;
+        std::vector<std::vector<std::string>> v;
         for (const auto & [ key, value ] : m) {
             v.push_back(value);                   
         }

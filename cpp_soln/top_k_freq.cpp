@@ -11,7 +11,7 @@ public:
             m[i]++;
         }
 
-        std::priority_queue<pair<int, int>> pq;
+        std::priority_queue<std::pair<int, int>> pq;
 
         for (auto &k : m) {
             pq.push(std::make_pair(k.second, k.first));

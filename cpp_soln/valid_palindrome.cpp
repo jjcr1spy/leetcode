@@ -3,7 +3,7 @@
 
 class Solution {
 public:
-    bool isPalindrome(string s) {
+    bool isPalindrome(std::string s) {
         int i = 0, j = s.length() - 1;
 
         while (i < j) {

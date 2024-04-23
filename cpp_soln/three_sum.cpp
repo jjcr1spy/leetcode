@@ -1,9 +1,9 @@
-//#include <vector>
-//#include <algorithm>
+#include <vector>
+#include <algorithm>
 
 class Solution {
 public:
-    std::vector<vector<int>> threeSum(std::vector<int>& nums) {
+    std::vector<std::vector<int>> threeSum(std::vector<int>& nums) {
         if (nums.size() < 3) return {}; // optimize
         
         std::sort(nums.begin(), nums.end());

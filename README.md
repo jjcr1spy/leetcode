@@ -1,1 +1,1 @@
-Leetcode problems in c/c++. Storing all soln's here.
+Leetcode problems in c/c++. Storing all solution's here.
