@@ -46,6 +46,7 @@
         "set": "cpp",
         "iostream": "cpp",
         "istream": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "stack": "cpp"
     }
 }
