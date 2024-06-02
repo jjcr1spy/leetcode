@@ -47,6 +47,7 @@
         "iostream": "cpp",
         "istream": "cpp",
         "cstring": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "sstream": "cpp"
     }
 }
